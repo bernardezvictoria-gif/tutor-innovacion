@@ -8,8 +8,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "vercel-build": "mkdir -p src public && cp App.js index.js src/ && cp index.html public/ && react-scripts build",
+    "start": "react-scripts start"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
